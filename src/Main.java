@@ -5,7 +5,7 @@ public class Main
 	{
 		Bank bank = new Bank("Bank of America");
 		int accountnumber = bank.openSimpleCheckingAccount();
-		if(bank.withdrawMoney(accountnumber, 2525))
+		if(bank.withdrawMoney(accountnumber, 4000))
 			System.out.println("Success");
 		else
 			System.out.println("Failure");

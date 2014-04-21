@@ -75,11 +75,14 @@ public class CheckingAccount
 	
 	public boolean withdrawal(double amount)
 	{
+	
+	
 		if(((fBalance - amount) < 0) && (!fDebitAllowed))
 		{
 			return false;
 		}
-		else if((fBalance - amount) < -fDebitAmount)
+		
+		else if((amount - fBalance) < -fDebitAmount) //Fixed logic error : earlier it was : else if((fBalance - amount) < -fDebitAmount)
 		{
 			fBalance = fBalance - amount;
 			return true;
