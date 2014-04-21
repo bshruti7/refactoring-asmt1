@@ -17,6 +17,7 @@ public class Bank
 	public int openSimpleCheckingAccount()
 	{
 		CheckingAccount newAccount = new CheckingAccount("Bob Smith", "1 Main St.", "12345", "Tacoma", "USA");
+		newAccount.setBalance(4000); // after new account has been created the balance has to be set - value to be taken as user input
 		fCheckingAccounts.add(newAccount);
 		return newAccount.getAccountNumber();
 	}
