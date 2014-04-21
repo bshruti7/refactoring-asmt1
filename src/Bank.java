@@ -1,6 +1,6 @@
 import java.util.Vector;
 
-
+//need to get rid of hard coded user input values first
 public class Bank 
 {
 	private String fName;
