@@ -2,7 +2,7 @@
 public class DebitCard 
 {
 	private static int fLastDebitCardNumber;
-	private CheckingAccount fAccountConnectedTo;
+	public CheckingAccount fAccountConnectedTo;
 	private int fDebitCardNumber;
 	private String fName;
 	private String fStreet;

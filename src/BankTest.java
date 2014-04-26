@@ -29,6 +29,7 @@ public class BankTest {
 		//Bank bank5 = new Bank("Bank of A");
 		
 		
+		
 	}
 
 	/**
@@ -63,8 +64,9 @@ public class BankTest {
 		
 		
 		int accnum=bank3.openSimpleCheckingAccount();
+		assertNotNull("Nothing was returned", accnum);
 		
-		//fail("Not yet implemented"); // TODO
+		
 	}
 
 	/**
@@ -72,7 +74,11 @@ public class BankTest {
 	 */
 	@Test
 	public final void testOpenFullPackage() {
-	//	fail("Not yet implemented"); // TODO
+		Bank bank7 = new Bank("Bank of C");
+		int acNum7=bank7.openFullPackage();
+		assertNotNull("Nothing was returned", acNum7);
+		
+		
 	}
 
 	/**

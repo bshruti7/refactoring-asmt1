@@ -88,7 +88,12 @@ public class CheckingAccountTest {
 	 */
 	@Test
 	public final void testWithdrawal() {
-		fail("Not yet implemented"); // TODO
+		newAccount.setBalance(5000);
+		double initialBal=newAccount.getBalance();
+		newAccount.withdrawal(2500);
+		double accBal = newAccount.getBalance();
+		double expectedBal = (initialBal-2500);
+		assertEquals(expectedBal, accBal, 0);
 	}
 
 	/**
@@ -96,7 +101,12 @@ public class CheckingAccountTest {
 	 */
 	@Test
 	public final void testVerseMoney() {
-		fail("Not yet implemented"); // TODO
+		newAccount.setBalance(5000);
+		double initialBal=newAccount.getBalance();
+		newAccount.verseMoney(2500);
+		double accBal = newAccount.getBalance();
+		double expectedBal = (initialBal+2500);
+		assertEquals(expectedBal, accBal, 0);
 	}
 
 	/**
@@ -112,7 +122,9 @@ public class CheckingAccountTest {
 	 */
 	@Test
 	public final void testGetBalance() {
-		fail("Not yet implemented"); // TODO
+		newAccount.setBalance(6000);
+		
+		
 	}
 
 	/**
@@ -120,7 +132,12 @@ public class CheckingAccountTest {
 	 */
 	@Test
 	public final void testIncreaseBalance() {
-		fail("Not yet implemented"); // TODO
+		newAccount.setBalance(5000);
+		double initialBal=newAccount.getBalance();
+		newAccount.increaseBalance(2500);
+		double accBal = newAccount.getBalance();
+		double expectedBal = (initialBal+2500);
+		assertEquals(expectedBal, accBal, 0);
 	}
 
 	/**
@@ -128,7 +145,13 @@ public class CheckingAccountTest {
 	 */
 	@Test
 	public final void testDecreaseBalance() {
-		fail("Not yet implemented"); // TODO
+		newAccount.setBalance(5000);
+		double initialBal=newAccount.getBalance();
+		newAccount.decreaseBalance(2500);
+		double accBal = newAccount.getBalance();
+		double expectedBal = (initialBal-2500);
+		assertEquals(expectedBal, accBal, 0);
+		
 	}
 
 	/**

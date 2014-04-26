@@ -1,7 +1,7 @@
 
 public class CheckingAccount 
 {
-	private int fAccountNumber;
+	public int fAccountNumber;
 	private String fName;
 	private String fStreet;
 	private String fZipcode;
