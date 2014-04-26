@@ -9,7 +9,7 @@ public class CreditCard
 	private String fTown;
 	private String fzipCode;
 	private String fCountry;
-	private double fLimit; // you cannot spend more than this limit
+	public double fLimit; // you cannot spend more than this limit
 	private double fBalance;
 	
 	public CreditCard(String name, String street, String town, String zipCode, String country)

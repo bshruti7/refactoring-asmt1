@@ -34,7 +34,9 @@ public class CheckingAccountTest {
 	@Test
 	public final void testCheckingAccountStringStringStringStringString() {
 		
-		fail("Not yet implemented"); // TODO
+		CheckingAccount Account1 = new CheckingAccount("Ross Walden", "Pacific Street", "10734", "Redmond", "USA");
+		assertNotNull(Account1);
+		
 	}
 
 	/**
@@ -42,7 +44,9 @@ public class CheckingAccountTest {
 	 */
 	@Test
 	public final void testCheckingAccountStringStringStringStringStringFloat() {
-		fail("Not yet implemented"); // TODO
+		
+		CheckingAccount Account2 = new CheckingAccount("Ross Walden", "Pacific Street", "10734", "Redmond", "USA", 5000);
+		assertNotNull(Account2);
 	}
 
 	/**
@@ -50,7 +54,8 @@ public class CheckingAccountTest {
 	 */
 	@Test
 	public final void testCheckingAccountInt() {
-		fail("Not yet implemented"); // TODO
+		CheckingAccount validateAccount = new CheckingAccount(123456);
+		assertEquals(123456,validateAccount.getAccountNumber(),0);
 	}
 
 	/**
@@ -80,7 +85,7 @@ public class CheckingAccountTest {
 	 */
 	@Test
 	public final void testPrint() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 	/**
@@ -114,7 +119,9 @@ public class CheckingAccountTest {
 	 */
 	@Test
 	public final void testApplyForCreditCard() {
-		fail("Not yet implemented"); // TODO
+		newAccount.setBalance(1000);
+		boolean result = newAccount.applyForCreditCard("Hilary Chelsea", "Marvel Way", "98989", "Frankfurt", "USA", newAccount.getAccountNumber());
+		assertEquals(true, result);
 	}
 
 	/**
@@ -123,6 +130,7 @@ public class CheckingAccountTest {
 	@Test
 	public final void testGetBalance() {
 		newAccount.setBalance(6000);
+		assertEquals(6000,newAccount.getBalance(),0);
 		
 		
 	}
