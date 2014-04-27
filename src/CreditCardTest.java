@@ -37,6 +37,10 @@ public class CreditCardTest {
 		boolean decision = credit_obj.pay(3000);
 		assertEquals(true, decision);
 		
+		//other branch
+		boolean decision1 = credit_obj.pay(6000);
+		assertEquals(true, decision1);
+		
 	}
 
 }

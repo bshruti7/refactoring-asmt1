@@ -128,6 +128,11 @@ public class CheckingAccountTest {
 		boolean result1 = newAccount.applyForCreditCard("Hilary Chelsea", "Marvel Way", "98989", "Frankfurt", "USA", newAccount.getAccountNumber());
 		assertEquals(true, result1);
 		
+		//testing another branch with negative balance
+		newAccount.setBalance(-1000);
+		boolean result2 = newAccount.applyForCreditCard("Hilary Chelsea", "Marvel Way", "98989", "Frankfurt", "USA", newAccount.getAccountNumber());
+		assertEquals(false, result2);
+		
 	}
 
 	/**

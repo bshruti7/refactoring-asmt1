@@ -20,7 +20,8 @@ public class SavingsAccountTest {
 
 	@Test
 	public final void testSavingsAccount() {
-		
+		savings_obj = new SavingsAccount("Joseph travalto", "Moon street", "98765", "Texas", "USA");
+		assertNotNull(savings_obj);
 	}
 
 	@Test
@@ -30,7 +31,9 @@ public class SavingsAccountTest {
 
 	@Test
 	public final void testWithdrawal() {
-		
+		savings_obj.fBalance=5000;
+		savings_obj.withdrawal(2000);
+		assertEquals(5000-2000,savings_obj.fBalance,0);
 	}
 
 	@Test

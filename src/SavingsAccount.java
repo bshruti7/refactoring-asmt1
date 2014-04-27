@@ -6,7 +6,7 @@ public class SavingsAccount {
 	private String fZipCode;
 	private String fTown;
 	private String fCountry;
-	private double fBalance;
+	public double fBalance;
 	private static double costs = 1; // per period there is a cost associated with this account
 									// that equals 1 pound
 	private static double interestRate = 1.25;
