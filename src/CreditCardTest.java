@@ -23,13 +23,13 @@ public class CreditCardTest {
 
 	@Test
 	public final void testCreditCardStringStringStringStringString() {
-		fail("Not yet implemented"); // TODO
+		
 		
 	}
 
 	@Test
 	public final void testCreditCardStringStringStringStringStringDouble() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 	@Test

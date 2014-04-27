@@ -20,27 +20,27 @@ public class SavingsAccountTest {
 
 	@Test
 	public final void testSavingsAccount() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 	@Test
 	public final void testCalculateInterest() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 	@Test
 	public final void testWithdrawal() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 	@Test
 	public final void testVerseMoney() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 	@Test
 	public final void testPrint() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 }

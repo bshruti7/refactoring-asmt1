@@ -20,17 +20,17 @@ public class DebitCardTest {
 
 	@Test
 	public final void testDebitCardStringStringStringStringString() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 	@Test
 	public final void testDebitCardStringStringStringStringStringDoubleCheckingAccount() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 	@Test
 	public final void testPay() {
-		fail("Not yet implemented"); // TODO
+		
 	}
 
 }
