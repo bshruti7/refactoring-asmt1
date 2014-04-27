@@ -122,6 +122,12 @@ public class CheckingAccountTest {
 		newAccount.setBalance(1000);
 		boolean result = newAccount.applyForCreditCard("Hilary Chelsea", "Marvel Way", "98989", "Frankfurt", "USA", newAccount.getAccountNumber());
 		assertEquals(true, result);
+		
+		//testing another branch
+		newAccount.setBalance(5000);
+		boolean result1 = newAccount.applyForCreditCard("Hilary Chelsea", "Marvel Way", "98989", "Frankfurt", "USA", newAccount.getAccountNumber());
+		assertEquals(true, result1);
+		
 	}
 
 	/**
@@ -203,7 +209,13 @@ public class CheckingAccountTest {
 		
 		CheckingAccount oneAccount = new CheckingAccount(1234);
 		CheckingAccount secondAccount = new CheckingAccount(1234);
-		assertEquals(true, oneAccount.equals(secondAccount));;
+		assertEquals(true, oneAccount.equals(secondAccount));
+		
+		
+		//checking other branch
+		CheckingAccount oneAccount1 = new CheckingAccount(1234);
+		CheckingAccount secondAccount2 = new CheckingAccount(5678);
+		assertEquals(false, oneAccount1.equals(secondAccount2));
 	}
 
 }
