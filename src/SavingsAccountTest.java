@@ -26,6 +26,11 @@ public class SavingsAccountTest {
 
 	@Test
 	public final void testCalculateInterest() {
+		savings_obj.fBalance=5000;
+		savings_obj.calculateInterest();
+		double expected = 5000 + (5000 * 1.25 / 100); 
+		assertEquals(expected,savings_obj.fBalance,0);
+		
 		
 	}
 
@@ -38,11 +43,15 @@ public class SavingsAccountTest {
 
 	@Test
 	public final void testVerseMoney() {
+		savings_obj.fBalance=5000;
+		savings_obj.verseMoney(6000);
+		assertEquals(11000,savings_obj.fBalance,0);
 		
 	}
 
 	@Test
 	public final void testPrint() {
+		savings_obj.print();
 		
 	}
 
